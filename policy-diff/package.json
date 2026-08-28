@@ -1,0 +1,19 @@
+{
+  "name": "policy-diff",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Upload two versions of a policy, get a diff written for a non-lawyer, ranked by who it actually affects.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
