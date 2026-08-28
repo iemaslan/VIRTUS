@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Bridge</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Order Bridge</h1>
+    <p class="app-subtitle">Two-way counter accessibility bridge</p>
+  </header>
+
+  <main class="bridge-grid">
+
+    <!-- CUSTOMER SIDE -->
+    <section class="panel panel-customer" aria-labelledby="customer-heading">
+      <h2 id="customer-heading" class="panel-title">
+        <span class="panel-badge">Customer</span>
+      </h2>
+
+      <div class="order-total-display">
+        <span class="message-label">Order Total</span>
+        <p id="orderTotalText" class="order-total-amount">$0.00</p>
+      </div>
+
+      <!-- 1. ASL Communication (primary customer input) -->
+      <div class="asl-communication">
+        <h3 class="section-heading section-heading-primary">ASL Communication</h3>
+
+        <div class="camera-input-option">
+          <div class="camera-input-header">
+            <span class="camera-input-label">Use Camera</span>
+            <span class="camera-input-subtitle">Live ASL recognition &mdash; a constrained set of counter-service phrases, not open-ended ASL</span>
+          </div>
+
+          <button type="button" id="startCameraBtn" class="mic-btn camera-start-btn">
+            Use Camera
+          </button>
+
+          <video id="cameraPreview" class="video-input-preview camera-preview" autoplay muted playsinline hidden></video>
+
+          <p id="cameraGuidance" class="camera-guidance" hidden>Keep both hands and upper body visible</p>
+
+          <div class="message-display" aria-live="polite">
+            <span class="message-label">Status</span>
+            <p id="cameraStatus" class="message-text">Camera permission required</p>
+          </div>
+
+          <button type="button" id="startSigningBtn" class="mic-btn camera-signing-btn" hidden>
+            Start Signing
+          </button>
+
+          <p id="cameraResult" class="video-input-result" hidden></p>
+
+          <button type="button" id="stopCameraBtn" class="camera-stop-link" hidden>Turn off camera</button>
+        </div>
+
+        <div class="video-input-option">
+          <div class="video-input-header">
+            <span class="video-input-label">Video Input</span>
+            <span class="video-input-subtitle">An alternative input using the same recognition pipeline as Live Camera</span>
+          </div>
+
+          <label for="videoInputFile" class="video-input-file-label">Choose ASL Clip</label>
+          <input
+            type="file"
+            id="videoInputFile"
+            class="video-input-file"
+            accept=".mp4,.webm,.mov,video/mp4,video/webm,video/quicktime"
+          />
+          <p id="videoInputFilename" class="video-input-filename"></p>
+
+          <video id="videoInputPreview" class="video-input-preview" controls playsinline hidden></video>
+
+          <button type="button" id="analyzeSignBtn" class="mic-btn video-input-analyze-btn" disabled>
+            Analyze Sign
+          </button>
+
+          <div class="message-display" aria-live="polite">
+            <span class="message-label">Status</span>
+            <p id="videoInputStatus" class="message-text">Select a short ASL clip to begin.</p>
+          </div>
+
+          <p id="videoInputResult" class="video-input-result" hidden></p>
+        </div>
+      </div>
+
+      <!-- 2. Type a Message (secondary customer input) -->
+      <div class="type-message">
+        <h3 class="section-heading section-heading-secondary">Type a Message</h3>
+        <textarea
+          id="typeMessageInput"
+          class="type-message-input"
+          rows="3"
+          placeholder="Type your message here..."
+        ></textarea>
+        <div class="type-message-actions">
+          <button type="button" id="sendMessageBtn" class="secondary-btn">Send to Cashier</button>
+          <button type="button" id="speakMessageBtn" class="secondary-btn">Speak Message</button>
+        </div>
+        <p id="typeMessageNotice" class="field-notice" hidden></p>
+      </div>
+
+      <!-- 3. Common Requests -->
+      <div class="common-requests">
+        <h3 class="section-heading section-heading-secondary">Common Requests</h3>
+        <div class="intent-buttons" id="customerIntentButtons">
+          <!-- Buttons generated from customerIntents in app.js -->
+        </div>
+      </div>
+
+      <div class="message-display" aria-live="polite">
+        <span class="message-label">Customer says</span>
+        <p id="customerMessageText" class="message-text">Select an option above.</p>
+      </div>
+    </section>
+
+    <!-- CASHIER SIDE -->
+    <section class="panel panel-cashier" aria-labelledby="cashier-heading">
+      <h2 id="cashier-heading" class="panel-title">
+        <span class="panel-badge">Cashier</span>
+      </h2>
+
+      <div class="message-display" aria-live="polite">
+        <span class="message-label">Customer Message</span>
+        <p id="recognizedAslLabel" class="recognized-asl-label" hidden></p>
+        <p id="customerMessageDisplayText" class="message-text">No message sent yet.</p>
+      </div>
+
+      <div class="speech-panel">
+        <button
+          type="button"
+          id="micButton"
+          class="mic-btn"
+          aria-label="Speak cashier response"
+        >
+          <span class="mic-icon" aria-hidden="true">&#127908;</span>
+          <span class="mic-btn-label">Speak Response</span>
+        </button>
+
+        <div class="message-display" aria-live="polite">
+          <span class="message-label">Status</span>
+          <p id="speechStatusText" class="message-text">Click the microphone and speak.</p>
+        </div>
+
+        <div class="message-display" aria-live="polite">
+          <span class="message-label">Heard</span>
+          <p id="speechTranscriptText" class="message-text transcript-text">&mdash;</p>
+        </div>
+      </div>
+
+      <p class="fallback-label">Or choose a response manually:</p>
+
+      <div class="intent-buttons" id="cashierResponseButtons">
+        <!-- Buttons generated from aslResponses in app.js -->
+      </div>
+
+      <div class="asl-player" aria-live="polite">
+        <span class="message-label">Cashier Response</span>
+        <p id="cashierResponsePhrase" class="message-text">Select a response above.</p>
+
+        <div class="asl-video-frame">
+          <video
+            id="aslVideo"
+            class="asl-video"
+            controls
+            playsinline
+            hidden
+          ></video>
+          <p id="aslVideoError" class="asl-video-error" role="alert" hidden></p>
+        </div>
+      </div>
+
+      <div class="order-total-panel">
+        <span class="message-label">Order Total</span>
+        <div class="order-total-controls">
+          <input
+            type="number"
+            id="orderTotalInput"
+            class="order-total-input"
+            placeholder="0.00"
+            min="0"
+            step="0.01"
+            inputmode="decimal"
+            aria-label="Order total amount"
+          />
+          <button type="button" id="sendTotalBtn" class="secondary-btn">Send Total</button>
+          <button type="button" id="clearTotalBtn" class="secondary-btn">Clear Total</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+  <script type="module" src="js/video-input.js"></script>
+  <script type="module" src="js/camera-input.js"></script>
+</body>
+</html>

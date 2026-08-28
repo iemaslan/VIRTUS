@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Bridge — ASL Calibration</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>ASL Calibration Tool</h1>
+    <p class="app-subtitle">
+      Developer-only utility for building recognition templates (Phase 3.5).
+      Not part of the customer or cashier experience.
+    </p>
+  </header>
+
+  <main class="calibration-panel">
+
+    <section class="calibration-section">
+      <h2 class="section-heading section-heading-primary">1. Calibrate burger_no_tomato (Phase 3.5)</h2>
+      <p class="calibration-hint">
+        Processes the three known training clips below through the same MediaPipe
+        landmark extraction and normalization pipeline used everywhere else in Order
+        Bridge, and builds <code>data/burger_no_tomato.json</code> from the real results.
+        These file paths are only used to locate the known training examples for this
+        one-time calibration run — recognition itself never looks at filenames.
+      </p>
+
+      <ul class="calibration-note">
+        <li>training/burger_no_tomato/burger_no_tomato_1.mp4</li>
+        <li>training/burger_no_tomato/burger_no_tomato_2.mp4</li>
+        <li>training/burger_no_tomato/burger_no_tomato_3.mp4</li>
+      </ul>
+
+      <button type="button" id="calibRunBntBtn" class="secondary-btn">
+        Run Calibration
+      </button>
+
+      <p id="calibBntStatus" class="message-text">Not yet run.</p>
+
+      <div id="calibBntSummary" class="calibration-summary" hidden></div>
+
+      <div class="calibration-field">
+        <label for="calibBntOutput">Generated data/burger_no_tomato.json</label>
+        <textarea id="calibBntOutput" class="calibration-select" rows="8" readonly></textarea>
+      </div>
+
+      <button type="button" id="calibBntDownloadBtn" class="secondary-btn" disabled>
+        Download data/burger_no_tomato.json
+      </button>
+    </section>
+
+    <section class="calibration-section">
+      <h2 class="section-heading section-heading-primary">2. Record Examples (other intents)</h2>
+      <p class="calibration-hint">
+        Pick a supported intent, then extract landmarks from one known example clip
+        at a time and add it to that intent's example set. Record a few varied
+        examples per intent for more reliable matching.
+      </p>
+
+      <div class="calibration-field">
+        <label for="calibLabelSelect">Intent label</label>
+        <select id="calibLabelSelect" class="calibration-select">
+          <option value="burger">burger &mdash; I would like a burger.</option>
+          <option value="burger_no_tomato">burger_no_tomato &mdash; I would like a burger with no tomato.</option>
+          <option value="water">water &mdash; I would like water.</option>
+          <option value="yes">yes &mdash; Yes.</option>
+          <option value="no">no &mdash; No.</option>
+        </select>
+      </div>
+
+      <div class="calibration-field">
+        <label for="calibFileInput">Example ASL video</label>
+        <input
+          type="file"
+          id="calibFileInput"
+          accept=".mp4,.webm,.mov,video/mp4,video/webm,video/quicktime"
+        />
+      </div>
+
+      <video id="calibPreview" class="video-input-preview" controls playsinline hidden></video>
+
+      <div class="calibration-actions">
+        <button type="button" id="calibExtractBtn" class="secondary-btn" disabled>
+          Extract &amp; Add Example
+        </button>
+        <button type="button" id="calibExportBtn" class="secondary-btn" disabled>
+          Export Examples as JSON
+        </button>
+        <button type="button" id="calibClearBtn" class="secondary-btn" disabled>
+          Clear Collected Examples
+        </button>
+      </div>
+
+      <p id="calibStatus" class="message-text">Select an intent and an example video to begin.</p>
+
+      <div id="calibSummary" class="calibration-summary" hidden>
+        <p><strong>Frames sampled (last clip):</strong> <span id="calibFrameCount"></span></p>
+        <p><strong>Frames with a detected hand:</strong> <span id="calibHandCount"></span></p>
+        <p><strong>Examples collected for this label:</strong> <span id="calibExampleCount">0</span></p>
+      </div>
+
+      <p class="calibration-note">
+        Exported files download as <code>&lt;label&gt;.json</code> and contain every example
+        collected for that label in this session. Move the file into a
+        <code>data/</code> folder next to <code>index.html</code>
+        (e.g. <code>data/water.json</code>) so the main app can load it. Repeat per intent.
+      </p>
+    </section>
+
+    <section class="calibration-section">
+      <h2 class="section-heading section-heading-primary">3. Test Against Saved Templates</h2>
+      <p class="calibration-hint">
+        Try an unseen clip against whatever <code>data/*.json</code> templates are currently
+        deployed, to sanity-check calibration quality before handing it to the main app.
+      </p>
+
+      <div class="calibration-field">
+        <label for="calibTestFileInput">Test video</label>
+        <input
+          type="file"
+          id="calibTestFileInput"
+          accept=".mp4,.webm,.mov,video/mp4,video/webm,video/quicktime"
+        />
+      </div>
+
+      <video id="calibTestPreview" class="video-input-preview" controls playsinline hidden></video>
+
+      <button type="button" id="calibTestBtn" class="secondary-btn" disabled>
+        Run Recognition
+      </button>
+
+      <p id="calibTestStatus" class="message-text">Select a test clip to begin.</p>
+      <p id="calibTestResult" class="calibration-note" hidden></p>
+    </section>
+
+  </main>
+
+  <script type="module" src="js/calibration.js"></script>
+</body>
+</html>
