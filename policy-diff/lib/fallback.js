@@ -19,11 +19,11 @@ const SIGNAL_PHRASE = Object.fromEntries(
   SIGNALS.map((s) => [s.id, s.label.toLowerCase()])
 );
 
-export function composeExplanations(rankedChanges) {
+export function composeExplanations(rankedChanges, reason = "no model key is configured") {
   return {
     document_summary:
       `${rankedChanges.length} substantive change${rankedChanges.length === 1 ? "" : "s"} were found between the two versions. ` +
-      "Explanations below are generated in code because no model key is configured.",
+      `Explanations below are generated in code because ${reason}.`,
     explanations: rankedChanges.map((change) => {
       const source = change.after || change.before;
       const signals = change.impact.signals.map((s) => SIGNAL_PHRASE[s.id]).filter(Boolean);

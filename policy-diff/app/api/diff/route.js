@@ -60,11 +60,27 @@ export async function POST(request) {
     const toExplain = ranked.slice(0, MAX_EXPLAINED);
 
     // Step 4 — the model.
+    //
+    // If the model call fails we still return a result, composed in code, because
+    // a half-broken diff is worse than a plain one. But the failure is reported
+    // rather than hidden: a tool that claims every quote is checked cannot also
+    // quietly present its own template text as the model's words.
     const client = createClient();
     const demoMode = client === null;
-    const explained = demoMode
-      ? composeExplanations(toExplain)
-      : await explainChanges(client, toExplain).catch(() => composeExplanations(toExplain));
+
+    let explained;
+    let modelError = null;
+    if (demoMode) {
+      explained = composeExplanations(toExplain, "no API key is configured");
+    } else {
+      try {
+        explained = await explainChanges(client, toExplain);
+      } catch (error) {
+        modelError = error?.message || "The model call failed.";
+        console.error("[policy-diff] model call failed, falling back to code:", error);
+        explained = composeExplanations(toExplain, "the model call failed");
+      }
+    }
 
     // Step 5 — verification, deterministic.
     const verification = verifyExplanations(explained.explanations, toExplain);
@@ -74,7 +90,8 @@ export async function POST(request) {
 
     return Response.json({
       demoMode,
-      model: demoMode ? null : MODEL,
+      modelError,
+      model: demoMode || modelError ? null : MODEL,
       summary,
       documentSummary: explained.document_summary,
       truncated: ranked.length > MAX_EXPLAINED ? ranked.length - MAX_EXPLAINED : 0,

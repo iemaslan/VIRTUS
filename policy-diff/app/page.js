@@ -99,8 +99,12 @@ export default function Home() {
           <span className="mark-sub">What actually changed</span>
         </div>
         {result && (
-          <span className={`chip ${result.demoMode ? "chip-warn" : "chip-live"}`}>
-            {result.demoMode ? "No API key — explanations generated in code" : `Live · ${result.model}`}
+          <span className={`chip ${result.demoMode || result.modelError ? "chip-warn" : "chip-live"}`}>
+            {result.demoMode
+              ? "No API key — explanations generated in code"
+              : result.modelError
+              ? "Model call failed — explanations generated in code"
+              : `Live · ${result.model}`}
           </span>
         )}
       </header>
@@ -187,6 +191,14 @@ export default function Home() {
       </form>
 
       {error && <div className="error">{error}</div>}
+
+      {result?.modelError && (
+        <div className="notice">
+          The diff, the ranking, and the quote checks below are unaffected — they are computed in
+          code. The plain-English wording is not from the model this time: the call failed
+          ({result.modelError}), so the explanations were composed in code instead.
+        </div>
+      )}
 
       {result && (
         <>
