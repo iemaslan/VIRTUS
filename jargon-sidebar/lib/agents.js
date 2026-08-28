@@ -14,10 +14,20 @@ import Anthropic from "@anthropic-ai/sdk";
 
 export const MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-5";
 
+/**
+ * An identity-linked API key acts as the person who created it, and the API
+ * requires that such a request name the workspace it acts in. A workspace key
+ * carries that context already. Supporting both means the deployment works
+ * with whichever kind of key was pasted into it, and says so when it does not.
+ */
 export function createClient() {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) return null;
-  return new Anthropic({ apiKey });
+  const workspaceId = process.env.ANTHROPIC_WORKSPACE_ID;
+  return new Anthropic({
+    apiKey,
+    ...(workspaceId ? { defaultHeaders: { "anthropic-workspace-id": workspaceId } } : {}),
+  });
 }
 
 const DEFINITION_SCHEMA = {

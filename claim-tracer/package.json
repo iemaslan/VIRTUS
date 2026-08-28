@@ -1,0 +1,19 @@
+{
+  "name": "claim-tracer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Paste a post, split it into atomic claims, trace each one to a source, and label it Sourced, Weakly Sourced, or Untraceable.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

@@ -61,7 +61,13 @@ export async function createClient() {
 
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) return null;
-  return new Anthropic({ apiKey });
+  // An identity-linked key acts as its creator and must name the workspace it
+  // acts in; a workspace key already carries that. Support both.
+  const workspaceId = process.env.ANTHROPIC_WORKSPACE_ID;
+  return new Anthropic({
+    apiKey,
+    ...(workspaceId ? { defaultHeaders: { "anthropic-workspace-id": workspaceId } } : {}),
+  });
 }
 
 /** Read the single text block a schema-constrained response is guaranteed to produce. */
