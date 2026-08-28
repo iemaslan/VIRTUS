@@ -11,7 +11,7 @@ and is independently installable, testable, and deployable.
 |-----------|------------|--------|
 | [`advocate-dc/`](advocate-dc/) | Two multi-agent pipelines for DC renters: turn a housing dispute into a ready-to-send action package, and find a home that fits your life and your real budget. Next.js + Claude. | Working, 38 tests passing |
 | [`policy-diff/`](policy-diff/) | Paste two versions of a policy and get the changes in plain English, ranked by who they actually affect. The diff is computed in code; the model only explains it. Concept 2.1. | Working, 17 tests passing |
-| _(project 3)_ | — | Not yet added |
+| [`jargon-sidebar/`](jargon-sidebar/) | Transcribe a live talk, catch the jargon as it lands, and keep a running sidebar of short definitions in context. Detection is computed in code; the model only defines. Concept 5.3. | Working, 11 tests passing |
 | _(project 4)_ | — | Not yet added |
 | _(project 5)_ | — | Not yet added |
 
