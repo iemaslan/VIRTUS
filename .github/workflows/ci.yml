@@ -1,0 +1,32 @@
+name: CI
+
+# The team's laptops sit behind a corporate network filter that blocks package
+# registries, so install/build/test verification happens here instead.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  advocate-dc:
+    name: advocate-dc — install, test, build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: advocate-dc
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build
+        run: npm run build
