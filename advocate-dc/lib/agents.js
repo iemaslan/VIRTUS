@@ -36,13 +36,19 @@ export const STRATEGY_PATHS = [
  *     model IDs are identical. Structured outputs and effort are both GA on
  *     Vertex, so nothing else in this codebase changes.
  *
- * The Vertex SDK is imported dynamically so it stays an optional dependency:
- * nobody running on the Anthropic API needs it installed.
+ * The Vertex SDK is imported dynamically, and marked webpackIgnore so the
+ * bundler leaves it alone, keeping it a genuinely optional dependency: nobody
+ * running on the Anthropic API needs it installed.
  */
 export async function createClient() {
   const vertexProject = process.env.ANTHROPIC_VERTEX_PROJECT_ID;
   if (vertexProject) {
-    const { AnthropicVertex } = await import("@anthropic-ai/vertex-sdk").catch(() => {
+    // webpackIgnore keeps this a genuine runtime import: without it the bundler
+    // resolves the specifier at build time and the build fails for everyone who
+    // has not installed an SDK they do not use.
+    const { AnthropicVertex } = await import(
+      /* webpackIgnore: true */ "@anthropic-ai/vertex-sdk"
+    ).catch(() => {
       throw new Error(
         "ANTHROPIC_VERTEX_PROJECT_ID is set but @anthropic-ai/vertex-sdk is not installed. Run: npm install @anthropic-ai/vertex-sdk"
       );
