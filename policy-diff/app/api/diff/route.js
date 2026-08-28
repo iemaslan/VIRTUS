@@ -16,6 +16,24 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
+/**
+ * What the reader is told when the model call fails.
+ *
+ * The underlying error is a JSON payload written for a developer reading a
+ * server log, and it belongs in the server log. On screen it is a short phrase
+ * in the same voice as the rest of the page — enough to know what happened and
+ * whether it is theirs to fix.
+ */
+function readableFailure(error) {
+  const status = error?.status;
+  if (status === 401 || status === 403) return "the API key was rejected";
+  if (status === 400) return "the API rejected the request";
+  if (status === 429) return "the API rate limit was reached";
+  if (typeof status === "number" && status >= 500) return "the API was unavailable";
+  if (error?.name === "APIConnectionTimeoutError") return "the call timed out";
+  return "the call did not complete";
+}
+
 const MAX_CHARS = 60000;
 const MAX_EXPLAINED = 12;
 
@@ -76,7 +94,7 @@ export async function POST(request) {
       try {
         explained = await explainChanges(client, toExplain);
       } catch (error) {
-        modelError = error?.message || "The model call failed.";
+        modelError = readableFailure(error);
         console.error("[policy-diff] model call failed, falling back to code:", error);
         explained = composeExplanations(toExplain, "the model call failed");
       }
@@ -110,7 +128,7 @@ export async function POST(request) {
         error:
           error?.status === 401
             ? "The Anthropic API key was rejected. Check ANTHROPIC_API_KEY."
-            : error?.message || "The diff failed unexpectedly.",
+            : "The diff failed unexpectedly.",
       },
       { status: 500 }
     );

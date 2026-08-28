@@ -194,9 +194,9 @@ export default function Home() {
 
       {result?.modelError && (
         <div className="notice">
-          The diff, the ranking, and the quote checks below are unaffected — they are computed in
-          code. The plain-English wording is not from the model this time: the call failed
-          ({result.modelError}), so the explanations were composed in code instead.
+          <strong>The diff, the ranking, and the quote checks below are unaffected</strong> — they
+          are computed in code. Only the plain-English wording is missing: the model call failed
+          because {result.modelError}, so the explanations below were composed in code instead.
         </div>
       )}
 
