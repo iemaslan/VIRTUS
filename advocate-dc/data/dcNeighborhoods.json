@@ -1,0 +1,154 @@
+{
+  "hubs": {
+    "downtown": "Downtown / Metro Center",
+    "dupont": "Dupont Circle",
+    "foggy_bottom": "Foggy Bottom / GWU",
+    "capitol_hill": "Capitol Hill / Union Station",
+    "navy_yard": "Navy Yard",
+    "bethesda": "Bethesda / NIH",
+    "pentagon_city": "Pentagon City / Crystal City",
+    "howard": "Howard University"
+  },
+  "neighborhoods": {
+    "Dupont Circle": {
+      "walk_score": 97,
+      "transit_score": 88,
+      "vibe": "Dense, walkable, embassy row. Bookstores and cafes on every block, and the Sunday farmers market at 20th and Q.",
+      "avg_utilities": 145,
+      "dog_parks": ["S Street Dog Park", "Stead Park"],
+      "running": ["Rock Creek Park trail entrance, 0.6 mi", "The Dupont-to-Georgetown loop"],
+      "coffee": ["Emissary", "Tryst", "Compass Coffee"],
+      "grocery": ["Whole Foods P Street", "Safeway 17th St"],
+      "commute_minutes": {
+        "downtown": 6, "dupont": 0, "foggy_bottom": 9, "capitol_hill": 14,
+        "navy_yard": 21, "bethesda": 17, "pentagon_city": 19, "howard": 13
+      }
+    },
+    "Navy Yard": {
+      "walk_score": 91,
+      "transit_score": 79,
+      "vibe": "Newest neighborhood in the city. Riverfront, ballpark, and a lot of buildings with rooftop pools and in-unit laundry.",
+      "avg_utilities": 165,
+      "dog_parks": ["Canal Park Dog Park", "Yards Park lawn"],
+      "running": ["Anacostia Riverwalk Trail, at the door"],
+      "coffee": ["Grubb's", "Philz Coffee"],
+      "grocery": ["Harris Teeter 4th St", "Whole Foods Navy Yard"],
+      "commute_minutes": {
+        "downtown": 14, "dupont": 21, "foggy_bottom": 22, "capitol_hill": 7,
+        "navy_yard": 0, "bethesda": 36, "pentagon_city": 24, "howard": 24
+      }
+    },
+    "Columbia Heights": {
+      "walk_score": 94,
+      "transit_score": 84,
+      "vibe": "The most genuinely mixed neighborhood in DC. Big-box shopping at the metro, quiet rowhouse blocks two streets over.",
+      "avg_utilities": 130,
+      "dog_parks": ["Walter Pierce Park Dog Park", "Girard Street Park"],
+      "running": ["Meridian Hill Park stairs", "Rock Creek Park, 1.1 mi"],
+      "coffee": ["Sonny's", "Colada Shop", "Call Your Mother"],
+      "grocery": ["Giant Columbia Heights", "Target grocery"],
+      "commute_minutes": {
+        "downtown": 12, "dupont": 11, "foggy_bottom": 17, "capitol_hill": 20,
+        "navy_yard": 25, "bethesda": 23, "pentagon_city": 27, "howard": 7
+      }
+    },
+    "Petworth": {
+      "walk_score": 87,
+      "transit_score": 76,
+      "vibe": "Rowhouses, porches, and the best value per square foot inside the city. Quieter than Columbia Heights, one stop further out.",
+      "avg_utilities": 125,
+      "dog_parks": ["Upshur Dog Park", "Grant Circle"],
+      "running": ["Rock Creek Park, 1.4 mi", "Fort Totten trails"],
+      "coffee": ["Cinderella Bakery", "Slash Run"],
+      "grocery": ["Safeway Georgia Ave", "Yes! Organic Market"],
+      "commute_minutes": {
+        "downtown": 16, "dupont": 15, "foggy_bottom": 21, "capitol_hill": 24,
+        "navy_yard": 29, "bethesda": 27, "pentagon_city": 31, "howard": 9
+      }
+    },
+    "H Street NE": {
+      "walk_score": 89,
+      "transit_score": 70,
+      "vibe": "Streetcar corridor, the densest run of bars and restaurants east of the Capitol, and rowhouses behind them.",
+      "avg_utilities": 135,
+      "dog_parks": ["Kingman Island trails", "Lincoln Park"],
+      "running": ["Anacostia Riverwalk via Benning Rd", "Lincoln Park loop"],
+      "coffee": ["Sidamo", "Little Miner"],
+      "grocery": ["Whole Foods H Street", "Giant on H"],
+      "commute_minutes": {
+        "downtown": 15, "dupont": 22, "foggy_bottom": 24, "capitol_hill": 8,
+        "navy_yard": 18, "bethesda": 34, "pentagon_city": 27, "howard": 21
+      }
+    },
+    "Shaw": {
+      "walk_score": 96,
+      "transit_score": 87,
+      "vibe": "Howard's neighborhood. Historic, central, and the shortest commute to almost everywhere in the city.",
+      "avg_utilities": 138,
+      "dog_parks": ["Shaw Dog Park", "Kennedy Recreation Center"],
+      "running": ["The 9th Street corridor to Meridian Hill"],
+      "coffee": ["La Colombe Blagden Alley", "Compass Coffee"],
+      "grocery": ["Giant O Street", "Whole Foods 8th St"],
+      "commute_minutes": {
+        "downtown": 7, "dupont": 9, "foggy_bottom": 14, "capitol_hill": 15,
+        "navy_yard": 20, "bethesda": 22, "pentagon_city": 22, "howard": 4
+      }
+    },
+    "Capitol Hill": {
+      "walk_score": 92,
+      "transit_score": 81,
+      "vibe": "Federal-era rowhouses, Eastern Market on weekends, and the quietest residential streets this close to downtown.",
+      "avg_utilities": 150,
+      "dog_parks": ["Lincoln Park", "Garfield Park Dog Park"],
+      "running": ["The Mall, 1 mi", "Lincoln Park to Anacostia"],
+      "coffee": ["Peregrine Espresso", "Bullfrog Bagels"],
+      "grocery": ["Trader Joe's Capitol Hill", "Eastern Market"],
+      "commute_minutes": {
+        "downtown": 10, "dupont": 14, "foggy_bottom": 16, "capitol_hill": 0,
+        "navy_yard": 7, "bethesda": 28, "pentagon_city": 18, "howard": 18
+      }
+    },
+    "Brookland": {
+      "walk_score": 78,
+      "transit_score": 72,
+      "vibe": "Detached houses with actual yards, a college-town feel around CUA, and the cheapest per-square-foot Red Line access in the city.",
+      "avg_utilities": 128,
+      "dog_parks": ["Turkey Thicket", "Fort Bunker Hill Park"],
+      "running": ["Metropolitan Branch Trail, at the door"],
+      "coffee": ["Brookland Grind", "Primrose"],
+      "grocery": ["Brookland Market", "Giant Rhode Island Ave"],
+      "commute_minutes": {
+        "downtown": 15, "dupont": 19, "foggy_bottom": 24, "capitol_hill": 13,
+        "navy_yard": 22, "bethesda": 31, "pentagon_city": 29, "howard": 12
+      }
+    },
+    "U Street": {
+      "walk_score": 95,
+      "transit_score": 86,
+      "vibe": "Music venues, late food, and the best-connected metro stop north of downtown. Loud on weekends, and that is the point.",
+      "avg_utilities": 140,
+      "dog_parks": ["S Street Dog Park", "Meridian Hill Park"],
+      "running": ["Meridian Hill Park", "Rock Creek Park, 0.9 mi"],
+      "coffee": ["Maydan-adjacent cafes", "Blind Dog Cafe"],
+      "grocery": ["Trader Joe's 14th St", "Streets Market"],
+      "commute_minutes": {
+        "downtown": 9, "dupont": 6, "foggy_bottom": 15, "capitol_hill": 17,
+        "navy_yard": 22, "bethesda": 20, "pentagon_city": 24, "howard": 6
+      }
+    },
+    "Southwest Waterfront": {
+      "walk_score": 88,
+      "transit_score": 80,
+      "vibe": "The Wharf. Water on one side, the Mall a walk away, and newer buildings with amenities the rest of the city does not have.",
+      "avg_utilities": 155,
+      "dog_parks": ["Randall Recreation dog run", "Lansburgh Park"],
+      "running": ["The Wharf promenade to Hains Point"],
+      "coffee": ["Colada Shop Wharf", "Dolcezza"],
+      "grocery": ["Safeway Waterfront", "District Market"],
+      "commute_minutes": {
+        "downtown": 9, "dupont": 15, "foggy_bottom": 14, "capitol_hill": 11,
+        "navy_yard": 12, "bethesda": 25, "pentagon_city": 13, "howard": 17
+      }
+    }
+  }
+}

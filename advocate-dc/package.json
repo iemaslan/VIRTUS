@@ -1,0 +1,19 @@
+{
+  "name": "advocate-dc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A multi-agent tenant-rights assistant for Washington, DC that turns a plain-English problem into a ready-to-send action package.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

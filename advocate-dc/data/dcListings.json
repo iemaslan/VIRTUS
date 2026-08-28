@@ -1,0 +1,1423 @@
+[
+  {
+    "id": "DC-001",
+    "address": "1610 Riggs Pl NW",
+    "neighborhood": "Dupont Circle",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 680,
+    "rent": 2450,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 50,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Dupont Circle",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 4
+    },
+    "amenities": [
+      "rooftop",
+      "dishwasher",
+      "central_air"
+    ],
+    "utilities_included": [],
+    "days_on_market": 12,
+    "description": "Top-floor one bedroom in a converted rowhouse, half a block off 17th Street."
+  },
+  {
+    "id": "DC-002",
+    "address": "2029 O St NW",
+    "neighborhood": "Dupont Circle",
+    "beds": 0,
+    "baths": 1,
+    "sqft": 410,
+    "rent": 1980,
+    "pets": {
+      "dogs": false,
+      "cats": true,
+      "monthly_pet_rent": 35,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Dupont Circle",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 6
+    },
+    "amenities": [
+      "doorman",
+      "bike_room"
+    ],
+    "utilities_included": [
+      "heat",
+      "water"
+    ],
+    "days_on_market": 31,
+    "description": "Studio in a 1920s building with the original casement windows."
+  },
+  {
+    "id": "DC-003",
+    "address": "1745 N St NW",
+    "neighborhood": "Dupont Circle",
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1050,
+    "rent": 4150,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 75,
+      "dog_weight_limit_lbs": 60
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 295
+    },
+    "metro": {
+      "station": "Dupont Circle",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 3
+    },
+    "amenities": [
+      "gym",
+      "rooftop",
+      "concierge",
+      "dishwasher"
+    ],
+    "utilities_included": [],
+    "days_on_market": 8,
+    "description": "Two bedroom with a den, two blocks from the Dupont Red Line entrance."
+  },
+  {
+    "id": "DC-004",
+    "address": "1350 21st St NW",
+    "neighborhood": "Dupont Circle",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 720,
+    "rent": 2680,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 60,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 250
+    },
+    "metro": {
+      "station": "Dupont Circle",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 5
+    },
+    "amenities": [
+      "gym",
+      "rooftop",
+      "pool",
+      "concierge"
+    ],
+    "utilities_included": [],
+    "days_on_market": 45,
+    "description": "Corner unit facing west, in a full-amenity building over a grocery."
+  },
+  {
+    "id": "DC-005",
+    "address": "1620 Church St NW",
+    "neighborhood": "Dupont Circle",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 590,
+    "rent": 2295,
+    "pets": {
+      "dogs": false,
+      "cats": false,
+      "monthly_pet_rent": 0,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Dupont Circle",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 7
+    },
+    "amenities": [
+      "courtyard"
+    ],
+    "utilities_included": [],
+    "days_on_market": 22,
+    "description": "Quiet garden-level one bedroom on a residential block."
+  },
+  {
+    "id": "DC-006",
+    "address": "1201 Half St SE",
+    "neighborhood": "Navy Yard",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 745,
+    "rent": 2590,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 55,
+      "dog_weight_limit_lbs": 80
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 240
+    },
+    "metro": {
+      "station": "Navy Yard–Ballpark",
+      "lines": [
+        "Green"
+      ],
+      "walk_minutes": 3
+    },
+    "amenities": [
+      "gym",
+      "pool",
+      "rooftop",
+      "concierge",
+      "dog_run"
+    ],
+    "utilities_included": [],
+    "days_on_market": 17,
+    "description": "South-facing one bedroom with a rooftop pool and a dog run on the fifth floor."
+  },
+  {
+    "id": "DC-007",
+    "address": "70 N St SE",
+    "neighborhood": "Navy Yard",
+    "beds": 0,
+    "baths": 1,
+    "sqft": 505,
+    "rent": 2150,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 50,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 225
+    },
+    "metro": {
+      "station": "Navy Yard–Ballpark",
+      "lines": [
+        "Green"
+      ],
+      "walk_minutes": 4
+    },
+    "amenities": [
+      "gym",
+      "rooftop",
+      "concierge",
+      "bike_room"
+    ],
+    "utilities_included": [],
+    "days_on_market": 52,
+    "description": "Studio with a full kitchen island, three minutes to the ballpark gate."
+  },
+  {
+    "id": "DC-008",
+    "address": "1250 4th St SE",
+    "neighborhood": "Navy Yard",
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1120,
+    "rent": 3850,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 75,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 260
+    },
+    "metro": {
+      "station": "Navy Yard–Ballpark",
+      "lines": [
+        "Green"
+      ],
+      "walk_minutes": 6
+    },
+    "amenities": [
+      "gym",
+      "pool",
+      "rooftop",
+      "concierge",
+      "dishwasher"
+    ],
+    "utilities_included": [],
+    "days_on_market": 9,
+    "description": "Two bedroom two bath with river views from the living room."
+  },
+  {
+    "id": "DC-009",
+    "address": "880 New Jersey Ave SE",
+    "neighborhood": "Navy Yard",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 690,
+    "rent": 2420,
+    "pets": {
+      "dogs": false,
+      "cats": true,
+      "monthly_pet_rent": 40,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Navy Yard–Ballpark",
+      "lines": [
+        "Green"
+      ],
+      "walk_minutes": 9
+    },
+    "amenities": [
+      "gym",
+      "bike_room"
+    ],
+    "utilities_included": [],
+    "days_on_market": 63,
+    "description": "One bedroom in a smaller building, priced below the corridor average."
+  },
+  {
+    "id": "DC-010",
+    "address": "1111 New Jersey Ave SE",
+    "neighborhood": "Navy Yard",
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1080,
+    "rent": 3690,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 65,
+      "dog_weight_limit_lbs": 50
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 275
+    },
+    "metro": {
+      "station": "Navy Yard–Ballpark",
+      "lines": [
+        "Green"
+      ],
+      "walk_minutes": 5
+    },
+    "amenities": [
+      "gym",
+      "pool",
+      "rooftop",
+      "dog_run",
+      "concierge"
+    ],
+    "utilities_included": [],
+    "days_on_market": 28,
+    "description": "Two bedroom with a private balcony over Canal Park."
+  },
+  {
+    "id": "DC-011",
+    "address": "1436 Meridian Pl NW",
+    "neighborhood": "Columbia Heights",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 650,
+    "rent": 2050,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 45,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Columbia Heights",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 7
+    },
+    "amenities": [
+      "courtyard",
+      "dishwasher"
+    ],
+    "utilities_included": [],
+    "days_on_market": 19,
+    "description": "One bedroom in a well-kept 1940s building a block from the park."
+  },
+  {
+    "id": "DC-012",
+    "address": "3060 16th St NW",
+    "neighborhood": "Columbia Heights",
+    "beds": 2,
+    "baths": 1,
+    "sqft": 880,
+    "rent": 2750,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 50,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Columbia Heights",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 11
+    },
+    "amenities": [
+      "courtyard",
+      "bike_room"
+    ],
+    "utilities_included": [],
+    "days_on_market": 41,
+    "description": "Large two bedroom with original hardwood, on the 16th Street bus line."
+  },
+  {
+    "id": "DC-013",
+    "address": "1401 Girard St NW",
+    "neighborhood": "Columbia Heights",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 610,
+    "rent": 1975,
+    "pets": {
+      "dogs": false,
+      "cats": true,
+      "monthly_pet_rent": 35,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "none",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Columbia Heights",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 5
+    },
+    "amenities": [],
+    "utilities_included": [
+      "heat",
+      "water",
+      "electric"
+    ],
+    "days_on_market": 26,
+    "description": "Basement-level one bedroom, recently repainted, utilities included."
+  },
+  {
+    "id": "DC-014",
+    "address": "3600 14th St NW",
+    "neighborhood": "Columbia Heights",
+    "beds": 0,
+    "baths": 1,
+    "sqft": 430,
+    "rent": 1680,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 40,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Columbia Heights",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 9
+    },
+    "amenities": [
+      "bike_room"
+    ],
+    "utilities_included": [],
+    "days_on_market": 34,
+    "description": "Efficiency studio, the cheapest metro-accessible unit in this dataset."
+  },
+  {
+    "id": "DC-015",
+    "address": "1315 Fairmont St NW",
+    "neighborhood": "Columbia Heights",
+    "beds": 2,
+    "baths": 2,
+    "sqft": 940,
+    "rent": 2980,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 60,
+      "dog_weight_limit_lbs": 70
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 180
+    },
+    "metro": {
+      "station": "Columbia Heights",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 6
+    },
+    "amenities": [
+      "rooftop",
+      "dishwasher",
+      "central_air"
+    ],
+    "utilities_included": [],
+    "days_on_market": 14,
+    "description": "Renovated two bedroom in a small condo building with a shared roof deck."
+  },
+  {
+    "id": "DC-016",
+    "address": "4200 Georgia Ave NW",
+    "neighborhood": "Petworth",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 700,
+    "rent": 1895,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 40,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Georgia Ave–Petworth",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 6
+    },
+    "amenities": [
+      "dishwasher",
+      "central_air"
+    ],
+    "utilities_included": [],
+    "days_on_market": 38,
+    "description": "One bedroom in a new four-story building above a bakery."
+  },
+  {
+    "id": "DC-017",
+    "address": "816 Upshur St NW",
+    "neighborhood": "Petworth",
+    "beds": 2,
+    "baths": 1,
+    "sqft": 950,
+    "rent": 2480,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 45,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Georgia Ave–Petworth",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 8
+    },
+    "amenities": [
+      "backyard"
+    ],
+    "utilities_included": [],
+    "days_on_market": 55,
+    "description": "Upper unit of a rowhouse with a shared backyard and a dog gate."
+  },
+  {
+    "id": "DC-018",
+    "address": "5010 8th St NW",
+    "neighborhood": "Petworth",
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1340,
+    "rent": 3150,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 50,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Georgia Ave–Petworth",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 13
+    },
+    "amenities": [
+      "backyard",
+      "dishwasher",
+      "central_air"
+    ],
+    "utilities_included": [],
+    "days_on_market": 71,
+    "description": "Three bedroom rowhouse, room for housemates, deep back garden."
+  },
+  {
+    "id": "DC-019",
+    "address": "3922 14th St NW",
+    "neighborhood": "Petworth",
+    "beds": 0,
+    "baths": 1,
+    "sqft": 395,
+    "rent": 1580,
+    "pets": {
+      "dogs": false,
+      "cats": false,
+      "monthly_pet_rent": 0,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Georgia Ave–Petworth",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 10
+    },
+    "amenities": [],
+    "utilities_included": [
+      "heat",
+      "water"
+    ],
+    "days_on_market": 47,
+    "description": "Small studio, no pets, but the lowest rent in the set."
+  },
+  {
+    "id": "DC-020",
+    "address": "900 Quincy St NW",
+    "neighborhood": "Petworth",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 655,
+    "rent": 2020,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 35,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 150
+    },
+    "metro": {
+      "station": "Georgia Ave–Petworth",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 7
+    },
+    "amenities": [
+      "dishwasher",
+      "bike_room"
+    ],
+    "utilities_included": [],
+    "days_on_market": 23,
+    "description": "Bright one bedroom facing Grant Circle."
+  },
+  {
+    "id": "DC-021",
+    "address": "1200 H St NE",
+    "neighborhood": "H Street NE",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 715,
+    "rent": 2280,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 50,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 200
+    },
+    "metro": {
+      "station": "Union Station",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 14
+    },
+    "amenities": [
+      "gym",
+      "rooftop",
+      "dishwasher"
+    ],
+    "utilities_included": [],
+    "days_on_market": 16,
+    "description": "One bedroom above the streetcar line with a rooftop grill deck."
+  },
+  {
+    "id": "DC-022",
+    "address": "624 12th St NE",
+    "neighborhood": "H Street NE",
+    "beds": 2,
+    "baths": 1,
+    "sqft": 890,
+    "rent": 2650,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 45,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Union Station",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 16
+    },
+    "amenities": [
+      "backyard"
+    ],
+    "utilities_included": [],
+    "days_on_market": 49,
+    "description": "Rowhouse unit on a quiet street, four blocks off the H Street noise."
+  },
+  {
+    "id": "DC-023",
+    "address": "1350 Florida Ave NE",
+    "neighborhood": "H Street NE",
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1010,
+    "rent": 3200,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 70,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 235
+    },
+    "metro": {
+      "station": "Union Station",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 18
+    },
+    "amenities": [
+      "gym",
+      "pool",
+      "rooftop",
+      "dog_run",
+      "concierge"
+    ],
+    "utilities_included": [],
+    "days_on_market": 11,
+    "description": "Two bedroom in a new building with the largest dog run in the dataset."
+  },
+  {
+    "id": "DC-024",
+    "address": "811 6th St NE",
+    "neighborhood": "H Street NE",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 640,
+    "rent": 2190,
+    "pets": {
+      "dogs": false,
+      "cats": true,
+      "monthly_pet_rent": 40,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Union Station",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 12
+    },
+    "amenities": [
+      "courtyard"
+    ],
+    "utilities_included": [],
+    "days_on_market": 58,
+    "description": "One bedroom two blocks from Union Station, cats only."
+  },
+  {
+    "id": "DC-025",
+    "address": "1350 9th St NW",
+    "neighborhood": "Shaw",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 700,
+    "rent": 2620,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 60,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 265
+    },
+    "metro": {
+      "station": "Shaw–Howard U",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 4
+    },
+    "amenities": [
+      "gym",
+      "rooftop",
+      "concierge",
+      "dishwasher"
+    ],
+    "utilities_included": [],
+    "days_on_market": 13,
+    "description": "One bedroom in Blagden Alley, walking distance to almost everything."
+  },
+  {
+    "id": "DC-026",
+    "address": "440 Rhode Island Ave NW",
+    "neighborhood": "Shaw",
+    "beds": 0,
+    "baths": 1,
+    "sqft": 470,
+    "rent": 2080,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 45,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Shaw–Howard U",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 7
+    },
+    "amenities": [
+      "gym",
+      "bike_room"
+    ],
+    "utilities_included": [],
+    "days_on_market": 29,
+    "description": "Studio with a sleeping alcove, one block from Shaw–Howard U."
+  },
+  {
+    "id": "DC-027",
+    "address": "1615 7th St NW",
+    "neighborhood": "Shaw",
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1005,
+    "rent": 3720,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 75,
+      "dog_weight_limit_lbs": 60
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 280
+    },
+    "metro": {
+      "station": "Shaw–Howard U",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 5
+    },
+    "amenities": [
+      "gym",
+      "pool",
+      "rooftop",
+      "concierge"
+    ],
+    "utilities_included": [],
+    "days_on_market": 7,
+    "description": "Two bedroom corner unit with floor-to-ceiling windows."
+  },
+  {
+    "id": "DC-028",
+    "address": "1250 Q St NW",
+    "neighborhood": "Shaw",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 660,
+    "rent": 2545,
+    "pets": {
+      "dogs": false,
+      "cats": true,
+      "monthly_pet_rent": 35,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Shaw–Howard U",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 9
+    },
+    "amenities": [
+      "courtyard",
+      "bike_room"
+    ],
+    "utilities_included": [],
+    "days_on_market": 36,
+    "description": "One bedroom in a historic building, no dogs permitted."
+  },
+  {
+    "id": "DC-029",
+    "address": "417 A St SE",
+    "neighborhood": "Capitol Hill",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 675,
+    "rent": 2495,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 55,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Eastern Market",
+      "lines": [
+        "Blue",
+        "Orange",
+        "Silver"
+      ],
+      "walk_minutes": 6
+    },
+    "amenities": [
+      "backyard",
+      "dishwasher"
+    ],
+    "utilities_included": [],
+    "days_on_market": 21,
+    "description": "Garden apartment in a federal-era rowhouse near Eastern Market."
+  },
+  {
+    "id": "DC-030",
+    "address": "1104 East Capitol St NE",
+    "neighborhood": "Capitol Hill",
+    "beds": 2,
+    "baths": 1,
+    "sqft": 930,
+    "rent": 3280,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 60,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Eastern Market",
+      "lines": [
+        "Blue",
+        "Orange",
+        "Silver"
+      ],
+      "walk_minutes": 9
+    },
+    "amenities": [
+      "backyard",
+      "central_air"
+    ],
+    "utilities_included": [],
+    "days_on_market": 33,
+    "description": "Two bedroom facing Lincoln Park, with a fenced yard."
+  },
+  {
+    "id": "DC-031",
+    "address": "301 Massachusetts Ave NE",
+    "neighborhood": "Capitol Hill",
+    "beds": 0,
+    "baths": 1,
+    "sqft": 455,
+    "rent": 2010,
+    "pets": {
+      "dogs": false,
+      "cats": true,
+      "monthly_pet_rent": 40,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Eastern Market",
+      "lines": [
+        "Blue",
+        "Orange",
+        "Silver"
+      ],
+      "walk_minutes": 8
+    },
+    "amenities": [
+      "doorman"
+    ],
+    "utilities_included": [],
+    "days_on_market": 44,
+    "description": "Studio in a doorman building, ten minutes to the Capitol on foot."
+  },
+  {
+    "id": "DC-032",
+    "address": "3520 12th St NE",
+    "neighborhood": "Brookland",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 730,
+    "rent": 1850,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 35,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Brookland–CUA",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 8
+    },
+    "amenities": [
+      "dishwasher",
+      "central_air",
+      "bike_room"
+    ],
+    "utilities_included": [],
+    "days_on_market": 66,
+    "description": "One bedroom on the Metropolitan Branch Trail, the best value on the Red Line."
+  },
+  {
+    "id": "DC-033",
+    "address": "901 Monroe St NE",
+    "neighborhood": "Brookland",
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1060,
+    "rent": 2790,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 50,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 120
+    },
+    "metro": {
+      "station": "Brookland–CUA",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 5
+    },
+    "amenities": [
+      "gym",
+      "rooftop",
+      "dishwasher"
+    ],
+    "utilities_included": [],
+    "days_on_market": 24,
+    "description": "Two bedroom above the Arts Walk with a shared roof deck."
+  },
+  {
+    "id": "DC-034",
+    "address": "2800 Perry St NE",
+    "neighborhood": "Brookland",
+    "beds": 3,
+    "baths": 2,
+    "sqft": 1420,
+    "rent": 3050,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 45,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Brookland–CUA",
+      "lines": [
+        "Red"
+      ],
+      "walk_minutes": 15
+    },
+    "amenities": [
+      "backyard",
+      "central_air"
+    ],
+    "utilities_included": [],
+    "days_on_market": 79,
+    "description": "Detached house with a driveway and a fenced yard, split three ways."
+  },
+  {
+    "id": "DC-035",
+    "address": "1215 U St NW",
+    "neighborhood": "U Street",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 685,
+    "rent": 2560,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 55,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 250
+    },
+    "metro": {
+      "station": "U Street",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 3
+    },
+    "amenities": [
+      "gym",
+      "rooftop",
+      "concierge"
+    ],
+    "utilities_included": [],
+    "days_on_market": 18,
+    "description": "One bedroom directly above the U Street corridor. Loud, central, connected."
+  },
+  {
+    "id": "DC-036",
+    "address": "2010 14th St NW",
+    "neighborhood": "U Street",
+    "beds": 2,
+    "baths": 2,
+    "sqft": 995,
+    "rent": 3590,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 70,
+      "dog_weight_limit_lbs": 50
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 270
+    },
+    "metro": {
+      "station": "U Street",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 6
+    },
+    "amenities": [
+      "gym",
+      "pool",
+      "rooftop",
+      "concierge",
+      "dishwasher"
+    ],
+    "utilities_included": [],
+    "days_on_market": 10,
+    "description": "Two bedroom with a corner balcony over 14th Street."
+  },
+  {
+    "id": "DC-037",
+    "address": "1745 T St NW",
+    "neighborhood": "U Street",
+    "beds": 0,
+    "baths": 1,
+    "sqft": 440,
+    "rent": 1920,
+    "pets": {
+      "dogs": false,
+      "cats": false,
+      "monthly_pet_rent": 0,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "U Street",
+      "lines": [
+        "Green",
+        "Yellow"
+      ],
+      "walk_minutes": 8
+    },
+    "amenities": [
+      "courtyard"
+    ],
+    "utilities_included": [],
+    "days_on_market": 53,
+    "description": "Studio in a quiet 1930s building just off the corridor."
+  },
+  {
+    "id": "DC-038",
+    "address": "1101 4th St SW",
+    "neighborhood": "Southwest Waterfront",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 710,
+    "rent": 2610,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 60,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 245
+    },
+    "metro": {
+      "station": "Waterfront",
+      "lines": [
+        "Green"
+      ],
+      "walk_minutes": 7
+    },
+    "amenities": [
+      "gym",
+      "pool",
+      "rooftop",
+      "concierge",
+      "dog_run"
+    ],
+    "utilities_included": [],
+    "days_on_market": 15,
+    "description": "One bedroom at The Wharf with a water-facing amenity deck."
+  },
+  {
+    "id": "DC-039",
+    "address": "525 Water St SW",
+    "neighborhood": "Southwest Waterfront",
+    "beds": 2,
+    "baths": 2,
+    "sqft": 1090,
+    "rent": 3980,
+    "pets": {
+      "dogs": true,
+      "cats": true,
+      "monthly_pet_rent": 75,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "in_unit",
+    "parking": {
+      "available": true,
+      "monthly": 290
+    },
+    "metro": {
+      "station": "Waterfront",
+      "lines": [
+        "Green"
+      ],
+      "walk_minutes": 4
+    },
+    "amenities": [
+      "gym",
+      "pool",
+      "rooftop",
+      "concierge",
+      "dishwasher"
+    ],
+    "utilities_included": [],
+    "days_on_market": 25,
+    "description": "Two bedroom with direct marina views."
+  },
+  {
+    "id": "DC-040",
+    "address": "800 Delaware Ave SW",
+    "neighborhood": "Southwest Waterfront",
+    "beds": 1,
+    "baths": 1,
+    "sqft": 650,
+    "rent": 2280,
+    "pets": {
+      "dogs": false,
+      "cats": true,
+      "monthly_pet_rent": 40,
+      "dog_weight_limit_lbs": null
+    },
+    "laundry": "building",
+    "parking": {
+      "available": false,
+      "monthly": 0
+    },
+    "metro": {
+      "station": "Waterfront",
+      "lines": [
+        "Green"
+      ],
+      "walk_minutes": 11
+    },
+    "amenities": [
+      "courtyard",
+      "bike_room"
+    ],
+    "utilities_included": [
+      "heat",
+      "water"
+    ],
+    "days_on_market": 61,
+    "description": "One bedroom in an older cooperative building, cats only, utilities included."
+  }
+]
